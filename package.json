@@ -1,0 +1,17 @@
+{
+  "name": "onvoard-act-utils",
+  "version": "0.0.1",
+  "description": "Utilities to be used across actors",
+  "keywords": [
+    "onvoard",
+  ],
+  "author": "OnVoard Developers <dev@onvoard.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onvoard/onvoard-act-utils.git"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {}
+}
