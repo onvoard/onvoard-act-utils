@@ -2,8 +2,16 @@
 // Common functions
 //=========================================
 const cleanText = (text) => {
-  if (text) return text.replace(/\s+/g, " ").trim();
-  return "";
+  if (!text) return "";
+
+  // remove excess whitespace and tabs (excluding line breaks)
+  text = text.replace(/[ \t\f\v]+/g, " ");
+
+  // replace 3 or more line breaks with 2 line breaks
+  text = text.replace(/\n{3,}/g, '\n\n');
+
+  // trim
+  return text.trim();
 }
 
 const replaceLineBreak = (content, substr="\n") => {
